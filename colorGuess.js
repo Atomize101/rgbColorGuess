@@ -19,8 +19,7 @@ colorDisplay.textContent = pickedColor;
 for(var i=0; i < boxes.length; i++) {
     boxes[i].style.backgroundColor = colors[i];
     
-    boxes[i].addEventListener('click', () => {
-        console.log(this.style.backgroundColor);
+    boxes[i].addEventListener('click', function() {
         var clickedColor = this.style.backgroundColor;
 
         if(clickedColor === pickedColor) {
@@ -31,4 +30,3 @@ for(var i=0; i < boxes.length; i++) {
         }
     });
 }
-
