@@ -24,6 +24,8 @@ p {
     color: white;
 }
 
-span {
-    color: white;
+#stripe {
+    background: white;
+    height: 30px;
+    text-align: center;
 }
