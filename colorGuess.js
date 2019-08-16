@@ -31,6 +31,7 @@ easyBtn.addEventListener('click', function() {
 });
 
 hardBtn.addEventListener('click', function() {
+    numOfboxes = 6;
     hardBtn.classList.add('selected');
     easyBtn.classList.remove('selected');
     colors = generateRandomColors(numOfboxes);
@@ -50,7 +51,7 @@ resetButton.addEventListener('click', function () {
     for(var i=0; i < boxes.length; i++) {
         boxes[i].style.backgroundColor = colors[i];
     }
-    h1Display.style.background = '#232323'
+    h1Display.style.background = 'steelblue'
 });
 
 colorDisplay.textContent = pickedColor;
